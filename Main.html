@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fraud Detection System</h1>
+    </header>
+
+    <section id="main">
+        <div class="form-container">
+            <h2>Detect Spam Calls</h2>
+            <form id="spamForm">
+                <label for="phone">Enter Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+                <button type="submit">Check for Spam</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Detect Financial Fraud</h2>
+            <form id="transactionForm">
+                <label for="transaction">Enter Transaction Details:</label>
+                <textarea id="transaction" name="transaction" placeholder="Enter transaction details" required></textarea>
+                <button type="submit">Check for Fraud</button>
+            </form>
+        </div>
+
+        <div id="results">
+            <h3>Results:</h3>
+            <div id="spamResult"></div>
+            <div id="fraudResult"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fraud Detection Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
